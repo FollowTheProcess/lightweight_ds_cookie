@@ -1,0 +1,11 @@
+{
+    "project_name": "What is the name of your project?",
+    "repo_name": "{{cookiecutter.project_name.lower().replace(' ', '_')}}",
+    "author_name": "Tom Fleet",
+    "description": "A short description of your project",
+    "open_source_license": [
+        "MIT",
+        "BSD-3-Clause",
+        "No license file"
+    ]
+}
