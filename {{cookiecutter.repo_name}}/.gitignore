@@ -1,9 +1,10 @@
 # Misc
 TODO.md
 
-# Ignore Data by default, but not src/data
+# Ignore Data by default, but not src/data or the Docs for src.data
 Data/
 !src/data
+!Docs/src/data
 
 
 # Python log files or directories
