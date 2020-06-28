@@ -1,4 +1,4 @@
-.PHONY: Docs
+.PHONY: docs
 
 help:
 	@echo "Available commands:"
