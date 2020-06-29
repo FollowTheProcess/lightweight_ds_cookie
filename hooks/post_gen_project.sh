@@ -23,7 +23,7 @@ yes | conda create --name "{{cookiecutter.repo_name}}" python=3 black flake8 pyt
 
 # Activate the env & export an environment.yml
 conda activate "{{cookiecutter.repo_name}}"
-conda env --name "{{cookiecutter.repo_name}}" export > environment.yml
+conda env export --name "{{cookiecutter.repo_name}}" > environment.yml
 
 # Do git stuff
 git init
