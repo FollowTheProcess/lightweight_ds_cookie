@@ -9,7 +9,7 @@ This version will run pre and post generation scripts in python and bash, it sho
 * Simplified Makefile
 * Changed Sphinx docs to [mkdocs](https://www.mkdocs.org) and [mkapi](https://github.com/daizutabi/mkapi/) plugin for simplicity and easier markdown support
 * Removed tox.ini as the only thing in there in original was flake8 config
-* Changed requirements.txt to environment.yaml for conda support
+* Changed requirements.txt to environment.yml for conda support
 * Added pre and post generation hooks that handle the creation and syncing of a git/github repo as well as the creation of a conda environment
 * Added support for pre-commit hooks
 
@@ -58,4 +58,16 @@ cd <your_absolute_path_to_where_you_put_python_projects>
 cookiecutter https://github.com/FollowTheProcess/lightweight_ds_cookie.git
 ```
 
-You will then be asked a series of questions, following which your project will be created, a remote github repo will be created with the same name, and a local git repo will be initialised and linked up the github repo.
+You will then be asked a series of questions, following which cookiecutter will create
+
+1) Your project directory structure using the name provided
+
+2) A Github repo with the same name
+
+3) A conda environment with python3, some dev requirements, pandas and numpy and the same name
+
+4) A local git repo
+
+Finally, it will then connect the git and Github repos, perform an initial commit and push to master
+
+<p><small> I have also included a top level environment.yml so you can replicate the exact environment this template was made in, incase anything doesn't work</small></p>

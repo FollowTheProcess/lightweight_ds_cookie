@@ -1,6 +1,6 @@
-# Welcome to MkDocs
+# {{cookiecutter.project_name}}
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+For full documentation on how to use mkdocs visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
 
