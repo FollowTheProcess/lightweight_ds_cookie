@@ -1,0 +1,11 @@
+site_name: "{{cookiecutter.project_name}}"
+theme:
+  name: mkdocs
+  nav_style: dark
+plugins:
+  - search
+  - mkapi
+nav:
+  - Home: index.md
+  - About: about.md
+  - API: mkapi/api/mkapi

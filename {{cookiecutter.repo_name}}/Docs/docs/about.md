@@ -4,34 +4,6 @@
 
 {{cookiecutter.author_name}}, {% now 'utc', '%b %Y' %}
 
-## Install Instructions
-
-If you want to install this project to run the code or experiment with it. Follow the below steps precisely.
-
-*You will need the [conda package manager](https://www.anaconda.com/products/individual) to recreate the environment*
-
-Clone the repo into your desired local directory
-
-Navigate to the project root:
-
-``` bash
-cd <your_absolute_path_to_{{cookiecutter.repo_name}}>
-```
-
-Create the project environment from the environment.yml:
-
-``` bash
-conda env create --file environment.yaml
-```
-
-Install the project in editable mode (Note the . telling pip to install from the current directory):
-
-``` bash
-pip install -e .
-```
-
-**Warning:** Only install this project inside a virtual environment. Pip cannot fully uninstall -e installed projects.
-
 ## Project Organisation
 
 ------------
