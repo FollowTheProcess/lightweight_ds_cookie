@@ -1,10 +1,6 @@
 [flake8]
-ignore =
-    # Trailing whitespace
-    W291
-    # Line break before binary operator (doesn't like black formatted pathlib)
-    W503
-max-line-length = 150
+
+max-line-length = 100
 exclude =
     tests/*,
     .git,
