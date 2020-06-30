@@ -31,7 +31,7 @@ pre-commit:
 check: style test clean pre-commit
 
 docs:
-	mkdocs build
+	mkdocs build --clean --site-dir Documentation
 
 gitkeep:
 	find . -name ".gitkeep" -exec rm -rf {} +
