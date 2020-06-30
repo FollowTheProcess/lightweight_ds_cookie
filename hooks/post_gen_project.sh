@@ -19,7 +19,7 @@ cd "{{cookiecutter.repo_name}}"
 
 # Create a conda env and install basic requirements
 # Because this is a data science cookiecutter, we can install common packages
-yes | conda create --name "{{cookiecutter.repo_name}}" python=3 black flake8 pytest numpy pandas
+yes | conda create --name "{{cookiecutter.repo_name}}" python=3 black flake8 isort pytest numpy pandas jupyterlab
 
 # Export an environment.yml
 conda env export --name "{{cookiecutter.repo_name}}" > environment.yml
