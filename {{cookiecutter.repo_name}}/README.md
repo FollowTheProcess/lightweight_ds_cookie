@@ -21,7 +21,7 @@ cd <your_absolute_path_to_{{cookiecutter.repo_name}}>
 Create the project environment from the environment.yml:
 
 ``` bash
-conda env create --file environment.yaml
+conda env create --file environment.yml
 ```
 
 Install the project in editable mode (Note the . telling pip to install from the current directory):
@@ -51,7 +51,7 @@ pip install -e .
     ├── Reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── Figures        <- Generated graphics and figures to be used in reporting.
     │
-    ├── environment.yaml    <- The requirements file for reproducing the analysis environment,
+    ├── environment.yml    <- The requirements file for reproducing the analysis environment,
     │                         generated with `conda env export > environment.yml
     │ 
     ├── makefile           <- Project level makefile. Run `make help` to see available commands

@@ -23,7 +23,7 @@
     ├── Reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── Figures        <- Generated graphics and figures to be used in reporting.
     │
-    ├── environment.yaml    <- The requirements file for reproducing the analysis environment,
+    ├── environment.yml    <- The requirements file for reproducing the analysis environment,
     │                         generated with `conda env export > environment.yml
     │ 
     ├── makefile           <- Project level makefile. Run `make help` to see available commands
