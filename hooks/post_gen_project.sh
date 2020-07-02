@@ -5,9 +5,6 @@
 
 # Runs as a post project generation hook in cookiecutter
 
-# Requires .env file in home dir containing GHUB=<your_github_url/>
-# Note the slash at the end, important
-
 # Source the same .env file as pre_gen_project.py
 source ~/.env
 
