@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Python script to create the Github repo for this project using PyGithub
 
 # Runs as a pre project generation hook in cookiecutter
