@@ -2,7 +2,7 @@
 
 This is a lighter weight version of the [cookiecutter-data-science template](https://github.com/drivendata/cookiecutter-data-science) I created mainly for personal use and convenience on DS projects. However, anyone is free to use this.
 
-This version will run pre and post generation scripts in python and bash, it should work by default on MacOS if you follow the instructions. Windows most likely won't like it!
+This version has been tested and MacOS and Linux but not Windows. The only thing that may not work is the makefile.
 
 ## Changes from the Original
 
@@ -10,41 +10,17 @@ This version will run pre and post generation scripts in python and bash, it sho
 * Changed Sphinx docs to [mkdocs](https://www.mkdocs.org) and [mkapi](https://github.com/daizutabi/mkapi/) plugin for simplicity and easier markdown support
 * Removed tox.ini as the only thing in there in original was flake8 config
 * Changed requirements.txt to environment.yml for conda support
-* Added pre and post generation hooks that handle the creation and syncing of a git/github repo as well as the creation of a conda environment
 * Added support for pre-commit hooks
 
 ## Instructions
 
-First ensure cookiecutter is installed (or updated with -U) and install other dependencies
+First ensure cookiecutter is installed (or updated with -U)
 
 ``` shell
- pip install -U cookiecutter python-dotenv PyGithub
+ pip install -U cookiecutter
  ```
 
  *Note: You will also need the [Anaconda Distribution](https://www.anaconda.com/products/individual) installed*
-
-In order for the pre and post generation hook scripts to work correctly, ensure you do following:
-
-* Create a .env file in your home directory
-
-``` shell
-# cd to your home directory
-cd
-
-# Create a .env file
-touch .env
-```
-
-* Open the .env file in a text editor and add the following information:
-
-``` shell
-# Note the slash at the end of FILEPATH, thats there on purpose!
-
-FILEPATH="<your_absolute_path_to_where_you_put_python_projects>/"
-TOKEN="<your_github_api_access_token>"
-```
-
-You can find out how to get a Github API access token [here](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
 
 * Navigate to directory you want your project to be created in
 
@@ -62,12 +38,6 @@ You will then be asked a series of questions, following which cookiecutter will 
 
 1) Your project directory structure using the name provided
 
-2) A Github repo with the same name
-
-3) A conda environment with python3, some dev requirements, pandas and numpy and the same name
-
-4) A local git repo
-
-Finally, it will then connect the git and Github repos, perform an initial commit and push to master
+2) A conda environment with python3, some dev requirements, pandas and numpy and the same name
 
 <p><small> I have also included a top level environment.yml so you can replicate the exact environment this template was made in, incase anything doesn't work</small></p>
