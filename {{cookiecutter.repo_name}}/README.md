@@ -15,7 +15,7 @@ Clone the repo into your desired local directory
 Navigate to the project root:
 
 ``` bash
-cd <your_absolute_path_to_{{cookiecutter.repo_name}}>
+cd <your_absolute_path_to_{{cookiecutter.project_slug}}>
 ```
 
 Create the project environment from the environment.yml:
