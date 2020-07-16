@@ -38,7 +38,6 @@ pip install -e .
 
     ├── LICENSE
     ├── README.md          <- Top level README (this document).
-    ├── Docs               <- Project documentation, if required (mkdocs by default)
     ├── Data
     │   ├── Final          <- The final data sets for modelling.
     │   ├── Processed      <- Intermediate data that has been transformed or otherwise processed.
