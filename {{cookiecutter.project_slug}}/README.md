@@ -47,19 +47,19 @@ pip install -e .
     │
     ├── Notebooks          <- Jupyter notebooks. Typically containing EDA or other exploratory content.
     │
-    ├── Reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    ├── Reports            <- Generated analysis as HTML, PDF, LaTeX, markdown etc.
     │   └── Figures        <- Generated graphics and figures to be used in reporting.
     │
     ├── environment.yml    <- The requirements file for reproducing the analysis environment,
     │                         generated with `conda env export > environment.yml
     │ 
-    ├── makefile           <- Project level makefile. Run `make help` to see available commands
+    ├── tasks.py           <- Project level automation tasks in invoke. Run `invoke --list` for help.
     │
     ├── setup.py           <- makes project pip installable `pip install -e .` so src can be imported
     ├── src                <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
     │   │
-    │   ├── config.py      <- Top level project config file.
+    │   ├── config.py      <- Top level src config file.
     │   │
     │   ├── data           <- Scripts to download or generate data
     │   │
