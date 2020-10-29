@@ -6,20 +6,34 @@ This version has been tested and MacOS and Linux but not Windows. It should work
 
 ## Changes from the Original
 
-* Changed makefile to [invoke](https://www.pyinvoke.org)
+* Changed makefile to [Invoke][Invoke]
 * Removed Docs, most individual level data projects don't require Docs. Focus here is on results based markdown reports and Notebooks
 * Removed tox.ini, functionality moved to invoke tasks
 * Changed requirements.txt to environment.yml for conda support, more appropriate to data science
 
 ## Instructions
 
-First ensure cookiecutter is installed (or updated with -U)
+First ensure cookiecutter is installed:
+
+In a conda env:
 
 ``` shell
- pip install -U cookiecutter
+conda install -c conda-forge cookiecutter
  ```
 
- *Note: You will also need the [Anaconda Distribution](https://www.anaconda.com/products/individual) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html) installed*
+Using pip:
+
+``` shell
+pip install cookiecutter
+```
+
+Homebrew:
+
+``` shell
+brew install cookiecutter
+```
+
+ *Note: You will also need the [Anaconda Distribution][anaconda] or [Miniconda][miniconda] installed*
 
 * Navigate to directory you want your project to be created in
 
@@ -72,3 +86,7 @@ conda install <package>
 But I recommend adding it to the environment.yml afterwards. This way, the environment can be generated cross-platform if required.
 
 <p><small> I have also included a top level environment.yml so you can replicate the exact environment this template was made in, incase anything doesn't work</small></p>
+
+[Invoke]: https://www.pyinvoke.org
+[Anaconda]: https://www.anaconda.com/products/individual
+[Miniconda]: https://docs.conda.io/en/latest/miniconda.html
