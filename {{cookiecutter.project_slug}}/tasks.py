@@ -16,6 +16,7 @@ def clean(c):
     """
     c.run('find . -name "__pycache__" -exec rm -rf {} +')
     c.run('find . -name ".pytest_cache" -exec rm -rf {} +')
+    c.run('find . -name ".mypy_cache" -exec rm -rf {} +')
     c.run('find . -name ".ipynb_checkpoints" -exec rm -rf {} +')
 
 
@@ -27,6 +28,7 @@ def style(c):
     c.run("isort .")
     c.run("flake8")
     c.run("black .")
+    c.run("mypy .")
 
 
 @task

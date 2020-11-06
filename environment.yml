@@ -1,11 +1,12 @@
 name: lightweight_ds_cookie
 channels:
- - defaults
- - conda-forge
+  - defaults
+  - conda-forge
 dependencies:
- - python>=3.7
- - cookiecutter
- - flake8
- - black
- - isort
- - invoke
+  - python=3
+  - cookiecutter
+  - flake8
+  - black
+  - isort
+  - invoke
+  - mypy
