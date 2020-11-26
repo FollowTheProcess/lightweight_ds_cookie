@@ -1,22 +1,23 @@
-name: {{cookiecutter.project_slug}}
+name: { { cookiecutter.project_slug } }
 channels:
- - defaults
- - conda-forge
+  - defaults
+  - conda-forge
 dependencies:
-# Some common data packages in here by default
- - python=3
- - invoke
- - black
- - flake8
- - isort
- - mypy
- - pytest
- - numpy
- - pandas
- - matplotlib
- - seaborn
- - altair
- - altair_data_server
- - altair_saver
- - ipykernel
- - jupyterlab
+  # Some common data packages in here by default
+  - python=3
+  - invoke
+  - black
+  - flake8
+  - isort
+  - mypy
+  - pytest
+  - requests
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - altair
+  - altair_data_server
+  - altair_saver
+  - ipykernel
+  - jupyterlab
