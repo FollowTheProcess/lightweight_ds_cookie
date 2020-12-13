@@ -1,16 +1,16 @@
-name: {{cookiecutter.project_slug}}
+name: { { cookiecutter.project_slug } }
 channels:
   - defaults
   - conda-forge
 dependencies:
   # Some common data packages in here by default
-  - python=3
+  - python>3.7
   - invoke
   - black
   - flake8
   - isort
   - mypy
-  - pytest
+  - rich
   - requests
   - numpy
   - pandas
