@@ -8,5 +8,6 @@
         "MIT",
         "BSD-3-Clause",
         "No license file"
-    ]
+    ],
+    "use_gh_cli_to_create_repo": "y"
 }
